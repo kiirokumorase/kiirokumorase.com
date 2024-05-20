@@ -1,0 +1,3 @@
+# kiirokumorase.com
+
+WIP
