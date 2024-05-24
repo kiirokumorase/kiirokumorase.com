@@ -1,0 +1,117 @@
+body {
+  background: #ffd060;
+  color: #b4afac;
+  font-size: 32px;
+
+  align-content: center;
+}
+
+#root {
+  display: flex;
+  flex-flow: column-reverse;
+  gap: 2rem;
+
+  max-height: 80%;
+  width: 480px;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+.signboard {
+  text-align: center;
+
+  display: flex;
+  flex-flow: column;
+
+  gap: 1rem;
+}
+
+.signboard-copyright {
+  font-size: 0.8rem
+}
+
+.signboard-orgname > .inline-accent {
+  color: transparent;
+  text-shadow: #b4afac 1px 0 4px;
+}
+
+main {
+  width: 100%;
+  flex-grow: 1;
+
+  border: #b4afac 8px solid;
+  font-weight: bolder;
+
+  padding: 3rem 1rem;
+  display: flex;
+}
+
+.info {
+  font-size: 1.2rem;
+  max-width: 100%;
+
+  flex-grow: 1;
+  text-align: center;
+}
+
+.info > section > h2 {
+  margin: 2rem;
+  padding: 1rem;
+  border-bottom: #b4afac dotted 4px;
+}
+
+.info > section > :not(h2) {
+  text-align: left;
+}
+
+section[name="member"] > .member-list,
+section[name="activity"] > .activity-list {
+  display: flex;
+  column-gap: 1rem;
+}
+
+section[name="member"] > .member-list {
+  justify-content: center;
+}
+
+.profile {
+  display: grid;
+  gap: 0.5rem;
+  text-align: center;
+
+  text-decoration: none;
+}
+
+.profile-icon {
+  max-width: 4rem;
+
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.profile-hn {
+  font-size: 0.9rem;
+}
+
+.profile-hn__link {
+  font-size: 0.6em;
+}
+
+.profile-hn > * {
+  color: transparent;
+  text-shadow: #9c9591 0 0 3px;
+}
+
+.profile-hn__link {
+  text-decoration: none;
+}
+
+.profile-hn__link:before {
+  content: "@"
+}
+
+aside[name="whoarewe"] {
+  font-size: 1.25rem;
+  word-break: auto-phrase;
+  text-wrap: balance;
+}
