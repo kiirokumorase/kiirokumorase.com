@@ -107,6 +107,8 @@ a:focus {
 }
 
 .profile-hn {
+  display: flex;
+  flex-flow: column;
   line-height: 1.0rem;
 }
 
