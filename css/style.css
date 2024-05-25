@@ -96,7 +96,7 @@ section[name="member"] > .member-list {
 a:hover,
 a:focus {
   transition: all 0.2s 0s ease;
-  filter: blur(2px) drop-shadow(1rem 1rem 1rem yellow);
+  filter: blur(2px) drop-shadow(0 0 1rem yellow);
 }
 
 .profile-icon {
